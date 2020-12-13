@@ -1,5 +1,5 @@
-const getMyText = document.getElementById("getText")
-const output = document.getElementById("output")
+const getMyText = document.getElementById("getText");
+const output = document.getElementById("output");
  
 const  getText =()=>{
 fetch("sample.txt")
