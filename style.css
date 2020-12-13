@@ -33,4 +33,5 @@ h4{
 #output{
     background-color: silver;
     font-size: larger;
+    border-radius: 15px;
 }
