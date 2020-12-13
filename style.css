@@ -4,14 +4,32 @@ body{
     display: flex;
     text-align: center;
 }
+h1{
+    font-weight: bolder !important;
+}
 .form-group{
-    width: fit-content;
+    
+}
+h4{
+    background-color: red;
+    color: white;
+    margin: 0px;
 }
 #addPost{
     display: flex;
     flex-direction: column;
 }
+#submit:hover {
+    background-color: white;
+    color: red;
+  }
 #submit{
     width: 130px;
     background: red;
+}
+@media only screen and (min-width: 600px) {
+#submit{
+    width: 222px;
+
+}
 }

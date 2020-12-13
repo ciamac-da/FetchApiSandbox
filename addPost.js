@@ -1,4 +1,6 @@
 const submitPost = document.getElementById("addPost");
+const myTitle = document.getElementById("output");
+const myBody = document.getElementById("myBody");
 
 const submitMyPost = (e) =>{
     e.preventDefault();
@@ -16,7 +18,12 @@ const submitMyPost = (e) =>{
 
 })
 .then((res)=> res.json())
-.then((data)=>console.log(data))
+.then((data)=>{
+    console.log(data.title);
+    myTitle.innerHTML = data.title
+    myBody.innerHTML = data.body
+
+})
 .catch((err)=> console.log(err))
 
 }
