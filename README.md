@@ -1,4 +1,4 @@
-# FetchAPI
+# Fetch API Sandbox
 
 https://ciamac-da.github.io/FetchApiSandbox/
 
