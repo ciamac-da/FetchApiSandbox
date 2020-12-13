@@ -4,3 +4,14 @@ body{
     display: flex;
     text-align: center;
 }
+.form-group{
+    width: fit-content;
+}
+#addPost{
+    display: flex;
+    flex-direction: column;
+}
+#submit{
+    width: 130px;
+    background: red;
+}
