@@ -1,5 +1,5 @@
 const getMyUsers = document.getElementById("getUsers");
-const userOutput = document.getElementById("output")
+const userOutput = document.getElementById("output");
 const getUsers = () =>{
     fetch("users.json")
     .then((res)=>res.json())
