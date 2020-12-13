@@ -1,8 +1,22 @@
 const getMyApi = document.getElementById("getPosts");
-const output = document.getElementById("output");
-
+const postOutput = document.getElementById("output");
+const submitPost = document.getElementById("addPosts")
 const getApi = () =>{
+    fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((res)=>res.json())
+    .then((data)=>{
+        let output = `<h2>Posts</h2>`
+        data.forEach( post => {
+            output += `
+            <div>
+            <h3> ${post.title} </h3>
+            <p> ${post.body} </p>
 
+            </div>
+            `;
+        });
+        postOutput.innerHTML = output;
+    })
 }
 
-getMyUsers.addEventListener("click", getApi)
+getMyApi.addEventListener("click", getApi)
